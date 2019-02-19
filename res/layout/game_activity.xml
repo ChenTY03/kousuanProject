@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/timg" >
+    
+	<TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:textSize="30sp"
+            android:text="TextView" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="25dp">
+
+        <Button
+            android:id="@+id/bt_suanfa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="25sp"
+            android:layout_marginLeft="10dp"
+            android:text="算法选择"
+            android:background="@drawable/sf_pressed" />
+
+        <Button
+            android:id="@+id/bt_weishu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="25sp"
+            android:background="@drawable/ws_pressed"
+            android:text="位数选择" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="25dp">
+
+        <EditText
+            android:id="@+id/ed_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"            
+            android:textSize="25sp"
+            android:ems="10" 
+            android:text="请输入时间/秒">
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/bt_start"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="25sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ks_pressed"
+            android:text="开始" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="25dp">
+		<TextView
+       
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:gravity="left"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:text="时间:" />
+        <TextView
+            android:id="@+id/tv_jishi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:layout_weight="1"
+            android:textColor="#FF0000"
+            android:text="等待开始" />
+ 		<TextView
+       
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:text="分数:" />
+        <TextView
+            android:id="@+id/tv_jifen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:textSize="30sp"
+            android:layout_weight="1"
+            android:textColor="#FF0000"
+            android:text="0" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:id="@+id/tv_shuzi1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textColor="#00B2EE"
+            android:text="等待" />
+
+        <TextView
+            android:id="@+id/tv_fuhao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textColor="#000000"
+            android:text="算法" />
+
+        <TextView
+            android:id="@+id/tv_shuzi2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textColor="#00B2EE"
+            android:text="等待" />
+
+        <TextView
+            android:id="@+id/tv_denghao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textColor="#000000"
+            android:text="=" />
+
+        <EditText
+            android:id="@+id/ed_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:textSize="35sp"
+            android:layout_weight="1"
+            android:ems="10" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="25dp">
+
+        <Button
+            android:id="@+id/bt_OK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:textSize="25sp"
+            android:text="下一题" 
+            android:background="@drawable/next_pressed"/>
+
+        <Button
+            android:id="@+id/bt_tuichu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:textSize="25sp"
+            android:background="@drawable/tc_pressed"
+            android:text="退出" />
+
+    </LinearLayout>
+
+</LinearLayout>
